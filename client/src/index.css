@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import 'tailwindcss';
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --theme-bg: #030f17;
+    --theme-primary: #06b6d4;
+    --theme-gradient: linear-gradient(135deg, #06B6D4 0%, #0284C7 100%);
+    --theme-badge: #67e8f9;
+}
+
+@layer base {
+    body {
+        background-color: var(--theme-bg, #030f17);
+        @apply text-white antialiased;
+        transition: background-color 0.4s ease;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+}
+
+@theme {
+    --color-primary: #8b5cf6;
+    --color-primary-hover: #7c3aed;
+    --color-secondary: #ec4899;
+    --color-dark-bg: #0f172a;
+    --color-dark-card: #1e293b;
+}
+
+@layer utilities {
+    .glass-panel {
+        @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+    }
+
+    .btn-secondary {
+        @apply px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold backdrop-blur-sm border border-white/10 transition-all duration-300;
+    }
+
+    .theme-btn-primary {
+        background: var(--theme-gradient, linear-gradient(135deg, #06B6D4 0%, #0284C7 100%));
+    }
+
+    .card-hover {
+        @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-500/10 hover:border-cyan-500/30;
+    }
+}
