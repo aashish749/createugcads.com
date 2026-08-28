@@ -120,7 +120,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 setToken(data.token);
                 setUser(data.user);
                 setIsAuthModalOpen(false);
-                toast.success(`Account created! Welcome to UGC.AI, ${data.user.name}!`);
+                toast.success(`Account created! Welcome to Create UGC Ads, ${data.user.name}!`);
                 return true;
             }
             return false;

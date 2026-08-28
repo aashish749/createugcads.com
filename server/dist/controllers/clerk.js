@@ -1,3 +1,4 @@
+// @ts-ignore
 import { verifyWebhook } from '@clerk/express/webhooks';
 import { prisma } from '../configs/prisma.js';
 import * as Sentry from "@sentry/node";

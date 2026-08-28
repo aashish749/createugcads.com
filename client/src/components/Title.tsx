@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 interface TitleProps {
     title?: string;
     heading?: string;

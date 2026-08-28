@@ -79,7 +79,7 @@ export default function AuthModal() {
                     <div className="text-center mb-6">
                         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold mb-3 text-neutral-300">
                             <SparklesIcon className="size-3.5 text-cyan-400" />
-                            <span>UGC.AI Account</span>
+                            <span>Create UGC Ads Account</span>
                         </div>
                         <h2 className="text-2xl font-bold text-white tracking-tight">
                             {mode === 'login' ? 'Welcome back' : 'Create your account'}

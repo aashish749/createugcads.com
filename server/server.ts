@@ -1,3 +1,4 @@
+console.log('🚀 Initializing Create UGC Ads Backend Server...');
 import "./configs/instrument.mjs";
 import express, { Request, Response } from 'express';
 import cors from 'cors';
@@ -16,7 +17,7 @@ app.use(express.json());
 
 // Routes
 app.get('/', (req: Request, res: Response) => {
-    res.send('UGC.AI Backend Server is Live!');
+    res.send('Create UGC Ads Backend Server is Live!');
 });
 
 app.use('/api/auth', authRouter);

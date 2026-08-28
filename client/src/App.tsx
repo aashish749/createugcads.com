@@ -11,6 +11,11 @@ import Community from './pages/Community';
 import Plans from './pages/Plans';
 import Checkout from './pages/Checkout';
 import Loading from './pages/Loading';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import RefundPolicy from './pages/RefundPolicy';
 import {Toaster} from 'react-hot-toast'
 
 function App() {
@@ -31,9 +36,12 @@ function App() {
 				<Route path='/checkout/:planId' element={<Checkout />}/>
 				<Route path='/checkout' element={<Checkout />}/>
 				<Route path='/loading' element={<Loading />}/>
-				
+				<Route path='/about' element={<About />}/>
+				<Route path='/contact' element={<Contact />}/>
+				<Route path='/privacy-policy' element={<PrivacyPolicy />}/>
+				<Route path='/terms-of-service' element={<TermsOfService />}/>
+				<Route path='/refund-policy' element={<RefundPolicy />}/>
 			</Routes>
-
 
 			<Footer />
 		</>

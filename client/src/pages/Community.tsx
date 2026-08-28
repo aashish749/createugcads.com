@@ -309,7 +309,7 @@ const Community = () => {
     if (navigator.share) {
       navigator.share({
         title: item.productName,
-        text: `Check out this UGC ad for ${item.productName} on UGC.AI!`,
+        text: `Check out this UGC ad for ${item.productName} on Create UGC Ads!`,
         url: window.location.href
       }).catch(() => {});
     } else {

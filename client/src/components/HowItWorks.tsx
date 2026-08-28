@@ -2,7 +2,6 @@ import Title from './Title';
 import { UploadCloudIcon, Wand2Icon, FilmIcon, ArrowRightIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PrimaryButton } from './Buttons';
-import { motion } from 'framer-motion';
 
 export default function HowItWorks() {
     const steps = [

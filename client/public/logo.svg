@@ -1,30 +1,40 @@
-<svg width="145" height="40" viewBox="0 0 145 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="210" height="40" viewBox="0 0 210 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="ugc_glow" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+    <!-- Primary Gradient matching Get Started Button (#06B6D4 to #0284C7 to #2563EB) -->
+    <linearGradient id="btn_brand_grad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#06B6D4"/>
-      <stop offset="50%" stop-color="#6366F1"/>
-      <stop offset="100%" stop-color="#EC4899"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#2563EB"/>
     </linearGradient>
-    <linearGradient id="ai_text_grad" x1="90" y1="10" x2="140" y2="30" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#67E8F9"/>
-      <stop offset="100%" stop-color="#A5B4FC"/>
+    <linearGradient id="text_ugc_grad" x1="110" y1="10" x2="200" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
-    <linearGradient id="ugc_inner" x1="6" y1="6" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+    <linearGradient id="icon_inner_stroke" x1="6" y1="6" x2="30" y2="30" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#C7D2FE" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#BAE6FD" stop-opacity="0.3"/>
     </linearGradient>
+    <filter id="subtle_glow" x="-2" y="-2" width="40" height="40" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
   </defs>
 
-  <!-- Modern AI Lens / Sparkle Icon -->
+  <!-- Modern Logo Mark Icon -->
   <g transform="translate(2, 2)">
-    <rect x="0" y="0" width="36" height="36" rx="10" fill="url(#ugc_glow)" />
-    <circle cx="18" cy="18" r="10" fill="#0A0A12" fill-opacity="0.6" stroke="url(#ugc_inner)" stroke-width="1.5"/>
+    <!-- Outer Glow Rounded Box -->
+    <rect x="0" y="0" width="36" height="36" rx="10" fill="url(#btn_brand_grad)" filter="url(#subtle_glow)"/>
+    <!-- Inner Lens -->
+    <circle cx="18" cy="18" r="10" fill="#04131E" fill-opacity="0.65" stroke="url(#icon_inner_stroke)" stroke-width="1.5"/>
+    <!-- Star Sparkle -->
     <path d="M18 10L19.5 15.5L25 18L19.5 20.5L18 26L16.5 20.5L11 18L16.5 15.5L18 10Z" fill="#FFFFFF"/>
-    <circle cx="18" cy="18" r="2.5" fill="#06B6D4"/>
+    <!-- Center Core Glow -->
+    <circle cx="18" cy="18" r="2.5" fill="#22D3EE"/>
   </g>
 
-  <!-- Clean Unified "UGC.AI" Typography -->
-  <text x="48" y="26" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="21" letter-spacing="0.5">
-    <tspan fill="#FFFFFF">UGC</tspan><tspan fill="url(#ai_text_grad)">.AI</tspan>
+  <!-- Clean Typography: "Create UGC Ads" -->
+  <text x="48" y="26" font-family="'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="18" letter-spacing="-0.2">
+    <tspan fill="#FFFFFF">Create </tspan><tspan fill="url(#text_ugc_grad)">UGC Ads</tspan>
   </text>
 </svg>

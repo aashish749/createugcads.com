@@ -1,6 +1,5 @@
 import { featuresData } from '../assets/dummy-data';
 import Title from './Title';
-import { motion } from 'framer-motion';
 
 export default function Features() {
     return (

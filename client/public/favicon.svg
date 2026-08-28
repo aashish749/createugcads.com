@@ -2,17 +2,17 @@
   <defs>
     <linearGradient id="fav_glow" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#06B6D4"/>
-      <stop offset="50%" stop-color="#6366F1"/>
-      <stop offset="100%" stop-color="#EC4899"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#2563EB"/>
     </linearGradient>
     <linearGradient id="fav_inner" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#C7D2FE" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#BAE6FD" stop-opacity="0.3"/>
     </linearGradient>
   </defs>
 
   <rect width="64" height="64" rx="18" fill="url(#fav_glow)" />
-  <circle cx="32" cy="32" r="18" fill="#0A0A12" fill-opacity="0.65" stroke="url(#fav_inner)" stroke-width="2.5"/>
+  <circle cx="32" cy="32" r="18" fill="#04131E" fill-opacity="0.65" stroke="url(#fav_inner)" stroke-width="2.5"/>
   <path d="M32 18L34.5 28L44.5 32L34.5 36L32 46L29.5 36L19.5 32L29.5 28L32 18Z" fill="#FFFFFF"/>
-  <circle cx="32" cy="32" r="4" fill="#06B6D4"/>
+  <circle cx="32" cy="32" r="4" fill="#22D3EE"/>
 </svg>

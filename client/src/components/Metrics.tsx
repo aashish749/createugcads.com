@@ -1,5 +1,4 @@
 import { TrendingUpIcon, ZapIcon, DollarSignIcon, VideoIcon } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 export default function Metrics() {
     const stats = [

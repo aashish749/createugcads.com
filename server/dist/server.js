@@ -1,3 +1,4 @@
+console.log('🚀 Initializing UGC.AI Backend Server...');
 import "./configs/instrument.mjs";
 import express from 'express';
 import cors from 'cors';

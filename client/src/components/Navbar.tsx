@@ -66,7 +66,7 @@ export default function Navbar() {
         <nav className="fixed top-5 left-0 right-0 z-50 px-4">
             <div className="max-w-6xl mx-auto flex items-center justify-between bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl p-3 shadow-2xl">
                 <Link to="/" onClick={() => scrollTo(0, 0)} className="flex items-center gap-2">
-                    <img src={assets.logo} alt="UGC.AI" className="h-8" />
+                    <img src={assets.logo} alt="Create UGC Ads" className="h-8 md:h-9 w-auto" />
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-300">
